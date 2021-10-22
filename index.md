@@ -1,3 +1,11 @@
+<div align="center">
+<figure><img src="figures/framework.png" width="500"></figure>
+ <br>
+<figcaption>Figure 1: Self-Validation.</figcaption>
+</div>
+
+
+
 ## Abstract
 
 Recent works have shown the surprising effectiveness of deep generative models in solving numerous image reconstruction (IR) tasks, ***without the need for any training set***. We call these models, such as deep image prior and deep decoder, collectively as ***single-instance deep generative priors*** (SIDGPs). However, often the successes hinge on appropriate early stopping, which by far has largely been handled in an ad hoc manner or even by visual inspection. 
