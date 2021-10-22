@@ -7,7 +7,7 @@
 
 ## Early stopping via self-validation
 
-Recent works have shown the surprising effectiveness of deep generative models in solving numerous image reconstruction (IR) tasks, ***without the need for any training set***. We call these models, such as deep image prior and deep decoder, collectively as ***single-instance deep generative priors*** (SIDGPs). However, often the successes hinge on appropriate early stopping (see [Figure 1](http://)), which by far has largely been handled in an ad hoc manner or even by visual inspection. 
+Recent works have shown the surprising effectiveness of deep generative models in solving numerous image reconstruction (IR) tasks, ***without the need for any training set***. We call these models, such as [deep image prior (DIP)](https://ieeexplore.ieee.org/abstract/document/8579082) and [deep decoder (DD)](https://openreview.net/forum?id=rylV-2C9KQ), collectively as ***single-instance deep generative priors*** (SIDGPs). However, often the successes hinge on appropriate early stopping (see [Figure 1](http://)), which by far has largely been handled in an ad hoc manner or even by visual inspection. 
 
 <div align="center">
 <figure><img src="figures/dip_dd_comb-01.png" width="800"></figure>
@@ -16,7 +16,7 @@ Recent works have shown the surprising effectiveness of deep generative models i
 </div>
  <br>
  
-In this paper, we propose the first principled method for early stopping (ES) when applying SIDGPs to image reconstruction, taking advantage of the typical bell trend of the reconstruction quality. In particular, our method is based on collaborative training and ***self-validation***: the primal reconstruction process is monitored by a deep autoencoder, which is trained online with the historic reconstructed images and used to validate the reconstruction quality constantly. On several IR problems and different SIDGPs that we experiment with, our self-validation method is able to reliably detect near-peak performance levels and signal good stopping points (see [Figure 2](http://) for an example).
+In this paper, we propose the first principled method for early stopping (ES) when applying SIDGPs to image reconstruction, taking advantage of the typical bell trend of the reconstruction quality. In particular, our method is based on collaborative training and ***self-validation***: the primal reconstruction process is monitored by a deep autoencoder, which is trained online with the historic reconstructed images and used to validate the reconstruction quality constantly. ***On several IR problems and different SIDGPs that we experiment with, our self-validation method is able to reliably detect near-peak performance levels and signal good stopping points*** (see [Figure 2](http://) for an example).
 
 <div align="center">
 <figure><img src="figures/Fig2_a_b_final.png" width="800"></figure>
@@ -31,7 +31,7 @@ In this paper, we propose the first principled method for early stopping (ES) wh
 
 ## Image denoising
 
-The power of [Deep Image Prior (DIP)](https://ieeexplore.ieee.org/abstract/document/8579082) and [Deep Decoder (DD)](https://openreview.net/forum?id=rylV-2C9KQ) was initially only demonstrated on Gaussian denoising. Here, to make the evaluation more thorough, we also experiment with denoising impulse, shot, and speckle noise, on a [standard image denoising dataset](https://webpages.tuni.fi/foi/GCF-BM3D/index.html#ref_results) (9 images). For each of the 4 noise types, we test a low and a high noise level (details in the Appendix of our paper). To obtain the final degraded
+The power of [DIP](https://ieeexplore.ieee.org/abstract/document/8579082) and [DD](https://openreview.net/forum?id=rylV-2C9KQ) was initially only demonstrated on Gaussian denoising. Here, to make the evaluation more thorough, we also experiment with denoising impulse, shot, and speckle noise, on a [standard image denoising dataset](https://webpages.tuni.fi/foi/GCF-BM3D/index.html#ref_results) (9 images). For each of the 4 noise types, we test a low and a high noise level (details in the Appendix of our paper). To obtain the final degraded
 results, we run [DIP](https://ieeexplore.ieee.org/abstract/document/8579082) for 150K iterations. The denoising results are measured in terms of the gap metrics that we define---PSNR gap (PG) and SSIM gap (SG)---are summarized in [Figure 3](http://). 
 
 Our typical detection gap is ≤ 1 measured in ES-PG, and ≤ 0.1 measured in ES-SG. If [DIP](https://ieeexplore.ieee.org/abstract/document/8579082) just runs without ES, the degradation of quality is severe, as indicated by both BASELINE-PG and BASELINE-SG. ***Evidently, our DIP+AE can save the computation and the reconstruction quality, and return an estimate with near-peak performance for almost all images, noise types, and noise levels that we test***. 
