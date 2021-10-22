@@ -12,6 +12,7 @@ Recent works have shown the surprising effectiveness of deep generative models i
 <div align="center">
 <figure><img src="figures/dip_dd_comb-01.png" width="800"></figure>
 
+ 
  <figcaption>Figure 1: Illustration of the overfitting issue of DIP and DD on image denoising with Gaussian noise.</figcaption>
 </div>
  <br>
