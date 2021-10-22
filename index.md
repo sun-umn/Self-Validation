@@ -77,7 +77,7 @@ Now we turn to SIREN, a recent functional SIDGP model that is designed to facili
  <br>
 
 ## Citation/BibTex
-Taihui Li, Zhong Zhuang, Hengyue Liang, Le Peng, Hengkang Wang, Ju Sun. Self-Validation: Early Stopping for Single-Instance Deep Generative Priors. 32st British Machine Vision Conference 2021.
+Taihui Li, Zhong Zhuang, Hengyue Liang, Le Peng, Hengkang Wang, Ju Sun. Self-Validation: Early Stopping for Single-Instance Deep Generative Priors. 32nd British Machine Vision Conference 2021.
 
 ## Contact
 - Taihui Li, lixx5027@umn.edu, https://taihui.github.io/
