@@ -64,5 +64,5 @@ In this paper, we propose the first principled method for early stopping when ap
 </div>
  <br>
 
-## Contact
+## Citation/BibTex
 TBD
