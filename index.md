@@ -30,13 +30,39 @@ In this paper, we propose the first principled method for early stopping when ap
 
 
 ## Image denoising
-TBD
+
+<div align="center">
+<figure><img src="figures/final_dip_denoising_comb-01.png" width="800"></figure>
+ <br>
+ <figcaption>Figure 3: DIP+AE for image denoising.</figcaption>
+</div>
+ <br>
+ 
+ <div align="center">
+<figure><img src="figures/online_scatter_final-01.png" width="800"></figure>
+ <br>
+ <figcaption>Figure 4: DIP+AE on IN-100. 1st row: ES-PGs; 2nd row: ES-SGs.</figcaption>
+</div>
+ <br>
+ 
 
 ## MRI reconstruction
-TBD
+
+ <div align="center">
+<figure><img src="figures/MRI_curve_image-01.png" width="800"></figure>
+ <br>
+ <figcaption>Figure 5: Results for MRI reconstruction. (left) The solid vertical lines indicate the peak performance iterate while the dash vertical lines are ES iterate detected by our method. (right) Visualizations for Sample 6 (1st row) and Sample 9 (2nd row).</figcaption>
+</div>
+ <br>
 
 ## Image regression
-TBD
+
+ <div align="center">
+<figure><img src="figures/siren_psnr_ssim-01_V2.png" width="800"></figure>
+ <br>
+ <figcaption>Figure 6: Results for image regression.</figcaption>
+</div>
+ <br>
 
 ## Contact
 TBD
