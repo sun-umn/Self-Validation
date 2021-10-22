@@ -56,7 +56,7 @@ We further confirm the merit of our method on a larger image dataset consisting 
  
 
 ## MRI reconstruction
-We now test our detection method on MRI reconstruction, a classical medical IR problem involving a nontrivial linear f. Specifically, the model is y = f (x) + ξ = F(x) + ξ , where F is the subsampled Fourier operator and $ξ$ models the noise encountered in practical MRI imaging. Here, we take 8-fold undersampling and choose to parametrize x using a DD. We report the performance here in [Figure 5](http://) (results for all randomly selected samples can be found in the Appendix of our paper). ***Our method is able to signal stopping points that are reasonably close to the peak points, which also yield reasonably faithful reconstruction***.
+We now test our detection method on MRI reconstruction, a classical medical IR problem involving a nontrivial linear f. Specifically, the model is y = f (x) + ξ = F(x) + ξ , where F is the subsampled Fourier operator and ξ models the noise encountered in practical MRI imaging. Here, we take 8-fold undersampling and choose to parametrize x using a DD. We report the performance here in [Figure 5](http://) (results for all randomly selected samples can be found in the Appendix of our paper). ***Our method is able to signal stopping points that are reasonably close to the peak points, which also yield reasonably faithful reconstruction***.
 
  <div align="center">
 <figure><img src="figures/MRI_curve_image-01.png" width="800"></figure>
