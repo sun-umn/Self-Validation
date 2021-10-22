@@ -1,5 +1,5 @@
 <div align="center">
-<figure><img src="figures/earlystop-Framework_V2.png" width="600"></figure>
+<figure><img src="figures/earlystop-Framework_V3.png" width="600"></figure>
  <br>
 </div>
 
