@@ -1,7 +1,6 @@
 <div align="center">
-<figure><img src="figures/framework.png" width="500"></figure>
+<figure><img src="figures/framework.png" width="800"></figure>
  <br>
-<figcaption>Figure 1: Self-Validation.</figcaption>
 </div>
 
 
