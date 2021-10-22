@@ -80,10 +80,10 @@ Now we turn to SIREN, a recent functional SIDGP model that is designed to facili
 Taihui Li, Zhong Zhuang, Hengyue Liang, Le Peng, Hengkang Wang, Ju Sun. Self-Validation: Early Stopping for Single-Instance Deep Generative Priors. 32nd British Machine Vision Conference 2021.
 
 ## Contact
-- Taihui Li, lixx5027@umn.edu, https://taihui.github.io/
-- Zhong Zhuang, zhuan143@umn.edu, https://scholar.google.com/citations?user=rGGxUQEAAAAJ
-- Hengyue Liang, liang656@umn.edu, https://hengyuel.github.io/
-- Le Peng, peng0347@umn.edu, https://sites.google.com/view/le-peng/
-- Hengkang Wang, wang9881@umn.edu, https://www.linkedin.com/in/hengkang-henry-wang-a1b293104/
-- Ju Sun, jusun@umn.edu, https://sunju.org/
+- Taihui Li, lixx5027@umn.edu, [https://taihui.github.io/](https://taihui.github.io/)
+- Zhong Zhuang, zhuan143@umn.edu, [https://scholar.google.com/citations?user=rGGxUQEAAAAJ](https://scholar.google.com/citations?user=rGGxUQEAAAAJ)
+- Hengyue Liang, liang656@umn.edu, [https://hengyuel.github.io/](https://hengyuel.github.io/)
+- Le Peng, peng0347@umn.edu, [https://sites.google.com/view/le-peng/](https://sites.google.com/view/le-peng/)
+- Hengkang Wang, wang9881@umn.edu, [https://www.linkedin.com/in/hengkang-henry-wang-a1b293104/](https://www.linkedin.com/in/hengkang-henry-wang-a1b293104/)
+- Ju Sun, jusun@umn.edu, [https://sunju.org/](https://sunju.org/)
 
