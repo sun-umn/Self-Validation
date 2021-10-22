@@ -21,7 +21,7 @@ In this paper, we propose the first principled method for early stopping when ap
 <div align="center">
 <figure><img src="figures/Fig2_a_b_final.png" width="800"></figure>
  <br>
- <figcaption>Figure 2: (left) The MSE curves of learning a natural image vs learning random noise by DIP; (right) the PSNR curve vs our online AE reconstruction error curve when fitting a noisy image with DIP.</figcaption>
+ <figcaption>Figure 2: (left) The MSE curves of learning a natural image vs learning random noise by DIP; (right) the PSNR curve vs our online AE reconstruction error curve when fitting a noisy image with DIP. The peak of the PSNR curve is well aligned with the valley of the AE error curve. </figcaption>
 </div>
  <br>
 
