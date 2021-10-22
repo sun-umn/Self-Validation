@@ -67,7 +67,7 @@ We now test our detection method on MRI reconstruction, a classical medical IR p
 
 ## Image regression
 
-Now we turn to SIREN, a recent functional SIDGP model that is designed to facilitate the learning of functions with significant high-frequency components. We consider a simple task from the original task, image regression, but add in some Gaussian noise. Mathematically, the y = x + ε, where ε∼N (0, 0.196). Clearly, when the MLP used in SIREN is sufficiently overparamterized, the noise will also be learned. We test our detection method on this using the same 9-image dataset as in denoising. From [Figure 6] (http://), we can see again that ***our method is capable of reliably detecting near-peak performance measured by either ES-PG or ES-SG, much better than without implementing any ES***.
+Now we turn to SIREN, a recent functional SIDGP model that is designed to facilitate the learning of functions with significant high-frequency components. We consider a simple task from the original task, image regression, but add in some Gaussian noise. Mathematically, the y = x + ε, where ε∼N (0, 0.196). Clearly, when the MLP used in SIREN is sufficiently overparamterized, the noise will also be learned. We test our detection method on this using the same 9-image dataset as in denoising. From [Figure 6](http://), we can see again that ***our method is capable of reliably detecting near-peak performance measured by either ES-PG or ES-SG, much better than without implementing any ES***.
 
  <div align="center">
 <figure><img src="figures/siren_psnr_ssim-01_V2.png" width="800"></figure>
