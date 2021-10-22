@@ -35,7 +35,7 @@ The power of DIP and DD was initially only demonstrated on Gaussian denoising. H
 results, we run DIP for 150K iterations. The denoising results are measured in terms of the gap metrics that we define are summarized in [Figure 3](http://). 
 
 Our typical detection gap is ≤ 1 measured in ES-PG, and ≤ 0.1 measured in ES-SG. If DIP just runs without ES, the degradation of quality is severe, as
-indicated by both BASELINE-PG and BASELINE-SG. Evidently, our DIP+AE can ***save the computation and the reconstruction quality, and return an estimate with near-peak performance for almost all images, noise types, and noise levels that we test***. 
+indicated by both BASELINE-PG and BASELINE-SG. ***Evidently, our DIP+AE can save the computation and the reconstruction quality, and return an estimate with near-peak performance for almost all images, noise types, and noise levels that we test***. 
 
 <div align="center">
 <figure><img src="figures/final_dip_denoising_comb-01.png" width="800"></figure>
@@ -67,6 +67,8 @@ We now test our detection method on MRI reconstruction, a classical medical IR p
 
 ## Image regression
 
+Now we turn to SIREN, a recent functional SIDGP model that is designed to facilitate the learning of functions with significant high-frequency components. We consider a simple task from the original task, image regression, but add in some Gaussian noise. Mathematically, the y = x + ε, where ε∼N (0, 0.196). Clearly, when the MLP used in SIREN is sufficiently overparamterized, the noise will also be learned. We test our detection method on this using the same 9-image dataset as in denoising. From [Figure 6] (http://), we can see again that ***our method is capable of reliably detecting near-peak performance measured by either ES-PG or ES-SG, much better than without implementing any ES***.
+
  <div align="center">
 <figure><img src="figures/siren_psnr_ssim-01_V2.png" width="800"></figure>
  <br>
@@ -75,4 +77,13 @@ We now test our detection method on MRI reconstruction, a classical medical IR p
  <br>
 
 ## Citation/BibTex
-TBD
+Taihui Li, Zhong Zhuang, Hengyue Liang, Le Peng, Hengkang Wang, Ju Sun. Self-Validation: Early Stopping for Single-Instance Deep Generative Priors. 32st British Machine Vision Conference 2021.
+
+## Contact
+- Taihui Li, lixx5027@umn.edu, https://taihui.github.io/
+- Zhong Zhuang, zhuan143@umn.edu, https://scholar.google.com/citations?user=rGGxUQEAAAAJ
+- Hengyue Liang, liang656@umn.edu, https://hengyuel.github.io/
+- Le Peng, peng0347@umn.edu, https://sites.google.com/view/le-peng/
+- Hengkang Wang, wang9881@umn.edu, https://www.linkedin.com/in/hengkang-henry-wang-a1b293104/
+- Ju Sun, jusun@umn.edu, https://sunju.org/
+
