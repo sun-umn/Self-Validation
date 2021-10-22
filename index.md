@@ -11,8 +11,7 @@ Recent works have shown the surprising effectiveness of deep generative models i
 
 <div align="center">
 <figure><img src="figures/dip_dd_comb-01.png" width="800"></figure>
-
- 
+ <br>
  <figcaption>Figure 1: Illustration of the overfitting issue of DIP and DD on image denoising with Gaussian noise.</figcaption>
 </div>
  <br>
@@ -21,7 +20,7 @@ In this paper, we propose the first principled method for early stopping (ES) wh
 
 <div align="center">
 <figure><img src="figures/Fig2_a_b_final.png" width="800"></figure>
-
+ <br>
  <figcaption>Figure 2: (left) The MSE curves of learning a natural image vs learning random noise by DIP; (right) the PSNR curve vs our online AE reconstruction error curve when fitting a noisy image with DIP. The peak of the PSNR curve is well aligned with the valley of the AE error curve. </figcaption>
 </div>
  <br>
@@ -39,16 +38,16 @@ Our typical detection gap is ≤ 1 measured in ES-PG, and ≤ 0.1 measured in ES
 
 <div align="center">
 <figure><img src="figures/final_dip_denoising_comb-01.png" width="800"></figure>
- 
+  <br>
  <figcaption>Figure 3: DIP+AE for image denoising.</figcaption>
 </div>
 
-
+ <br>
 We further confirm the merit of our method on a larger image dataset consisting of 100 randomly selected images from [ImageNet](https://image-net.org/), denoted as IN-100. We follow the same evaluation protocol as above, except that we only experiment a medium noise level and we do not estimate the means and standard deviations; the results are reported in [Figure 4](http://). ***It is easy to see that the ES-PGs are concentrated around 1 and the ES-GSs are concentrated around 0.1, consistent with our observation on the small-scale dataset above***.
 
  <div align="center">
 <figure><img src="figures/online_scatter_final-01.png" width="800"></figure>
-
+ <br>
  <figcaption>Figure 4: DIP+AE on IN-100. 1st row: ES-PGs; 2nd row: ES-SGs.</figcaption>
 </div>
  <br>
@@ -60,7 +59,7 @@ We now test our detection method on MRI reconstruction, a classical medical IR p
 
  <div align="center">
 <figure><img src="figures/MRI_curve_image-01.png" width="800"></figure>
-
+ <br>
  <figcaption>Figure 5: Results for MRI reconstruction. (left) The solid vertical lines indicate the peak performance iterate while the dash vertical lines are ES iterate detected by our method. (right) Visualizations for Sample 6 (1st row) and Sample 9 (2nd row).</figcaption>
 </div>
  <br>
@@ -71,7 +70,7 @@ Now we turn to [SIREN](https://proceedings.neurips.cc//paper/2020/hash/53c04118d
 
  <div align="center">
 <figure><img src="figures/siren_psnr_ssim-01_V2.png" width="800"></figure>
-
+ <br>
  <figcaption>Figure 6: Results for image regression.</figcaption>
 </div>
  <br>
