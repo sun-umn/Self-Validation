@@ -42,6 +42,7 @@ Our typical detection gap is ≤ 1 measured in ES-PG, and ≤ 0.1 measured in ES
  <figcaption>Figure 3: DIP+AE for image denoising.</figcaption>
 </div>
 
+
 We further confirm the merit of our method on a larger image dataset consisting of 100 randomly selected images from [ImageNet](https://image-net.org/), denoted as IN-100. We follow the same evaluation protocol as above, except that we only experiment a medium noise level and we do not estimate the means and standard deviations; the results are reported in [Figure 4](http://). ***It is easy to see that the ES-PGs are concentrated around 1 and the ES-GSs are concentrated around 0.1, consistent with our observation on the small-scale dataset above***.
 
  <div align="center">
