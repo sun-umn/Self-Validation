@@ -12,11 +12,11 @@ Recent works have shown the surprising effectiveness of deep generative models i
 <div align="center">
 <figure><img src="figures/dip_dd_comb-01.png" width="800"></figure>
  <br>
- <figcaption>Figure 1: Illustration of the overfitting issue of [Deep Image Prior (DIP)(https://openaccess.thecvf.com/content_cvpr_2018/html/Ulyanov_Deep_Image_Prior_CVPR_2018_paper.html) and [Deep Decoder (DD)](http://) on image denoising with Gaussian noise.</figcaption>
+ <figcaption>Figure 1: Illustration of the overfitting issue of DIP and DD on image denoising with Gaussian noise.</figcaption>
 </div>
  <br>
  
-In this paper, we propose the first principled method for early stopping when applying SIDGPs to image reconstruction, taking advantage of the typical bell trend of the reconstruction quality. In particular, our method is based on collaborative training and ***self-validation***: the primal reconstruction process is monitored by a deep autoencoder, which is trained online with the historic reconstructed images and used to validate the reconstruction quality constantly. On several IR problems and different SIDGPs that we experiment with, our self-validation method is able to reliably detect near-peak performance levels and signal good stopping points (see [Figure 2](http://) for an example).
+In this paper, we propose the first principled method for early stopping (ES) when applying SIDGPs to image reconstruction, taking advantage of the typical bell trend of the reconstruction quality. In particular, our method is based on collaborative training and ***self-validation***: the primal reconstruction process is monitored by a deep autoencoder, which is trained online with the historic reconstructed images and used to validate the reconstruction quality constantly. On several IR problems and different SIDGPs that we experiment with, our self-validation method is able to reliably detect near-peak performance levels and signal good stopping points (see [Figure 2](http://) for an example).
 
 <div align="center">
 <figure><img src="figures/Fig2_a_b_final.png" width="800"></figure>
@@ -31,11 +31,10 @@ In this paper, we propose the first principled method for early stopping when ap
 
 ## Image denoising
 
-The power of DIP and DD was initially only demonstrated on Gaussian denoising. Here, to make the evaluation more thorough, we also experiment with denoising impulse, shot, and speckle noise, on a [standard image denoising dataset](https://webpages.tuni.fi/foi/GCF-BM3D/index.html#ref_results) (9 images). For each of the 4 noise types, we test a low and a high noise level (details in the Appendix of our paper). To obtain the final degraded
-results, we run DIP for 150K iterations. The denoising results are measured in terms of the gap metrics that we define are summarized in [Figure 3](http://). 
+The power of [Deep Image Prior (DIP)](https://ieeexplore.ieee.org/abstract/document/8579082) and [Deep Decoder (DD)](https://openreview.net/forum?id=rylV-2C9KQ) was initially only demonstrated on Gaussian denoising. Here, to make the evaluation more thorough, we also experiment with denoising impulse, shot, and speckle noise, on a [standard image denoising dataset](https://webpages.tuni.fi/foi/GCF-BM3D/index.html#ref_results) (9 images). For each of the 4 noise types, we test a low and a high noise level (details in the Appendix of our paper). To obtain the final degraded
+results, we run [DIP](https://ieeexplore.ieee.org/abstract/document/8579082) for 150K iterations. The denoising results are measured in terms of the gap metrics that we define---PSNR gap (PG) and SSIM gap (SG)---are summarized in [Figure 3](http://). 
 
-Our typical detection gap is ≤ 1 measured in ES-PG, and ≤ 0.1 measured in ES-SG. If DIP just runs without ES, the degradation of quality is severe, as
-indicated by both BASELINE-PG and BASELINE-SG. ***Evidently, our DIP+AE can save the computation and the reconstruction quality, and return an estimate with near-peak performance for almost all images, noise types, and noise levels that we test***. 
+Our typical detection gap is ≤ 1 measured in ES-PG, and ≤ 0.1 measured in ES-SG. If [DIP](https://ieeexplore.ieee.org/abstract/document/8579082) just runs without ES, the degradation of quality is severe, as indicated by both BASELINE-PG and BASELINE-SG. ***Evidently, our DIP+AE can save the computation and the reconstruction quality, and return an estimate with near-peak performance for almost all images, noise types, and noise levels that we test***. 
 
 <div align="center">
 <figure><img src="figures/final_dip_denoising_comb-01.png" width="800"></figure>
@@ -56,7 +55,8 @@ We further confirm the merit of our method on a larger image dataset consisting 
  
 
 ## MRI reconstruction
-We now test our detection method on MRI reconstruction, a classical medical IR problem involving a nontrivial linear f. Specifically, the model is y = f (x) + ξ = F(x) + ξ , where F is the subsampled Fourier operator and ξ models the noise encountered in practical MRI imaging. Here, we take 8-fold undersampling and choose to parametrize x using a DD. We report the performance here in [Figure 5](http://) (results for all randomly selected samples can be found in the Appendix of our paper). ***Our method is able to signal stopping points that are reasonably close to the peak points, which also yield reasonably faithful reconstruction***.
+
+We now test our detection method on MRI reconstruction, a classical medical IR problem involving a nontrivial linear f. Specifically, the model is y = f (x) + ξ = F(x) + ξ , where F is the subsampled Fourier operator and ξ models the noise encountered in practical MRI imaging. Here, we take 8-fold undersampling and choose to parametrize x using a [DD](https://openreview.net/forum?id=rylV-2C9KQ). We report the performance here in [Figure 5](http://) (results for all randomly selected samples can be found in the Appendix of our paper). ***Our method is able to signal stopping points that are reasonably close to the peak points, which also yield reasonably faithful reconstruction***.
 
  <div align="center">
 <figure><img src="figures/MRI_curve_image-01.png" width="800"></figure>
@@ -67,7 +67,7 @@ We now test our detection method on MRI reconstruction, a classical medical IR p
 
 ## Image regression
 
-Now we turn to SIREN, a recent functional SIDGP model that is designed to facilitate the learning of functions with significant high-frequency components. We consider a simple task from the original task, image regression, but add in some Gaussian noise. Mathematically, the y = x + ε, where ε∼N (0, 0.196). Clearly, when the MLP used in SIREN is sufficiently overparamterized, the noise will also be learned. We test our detection method on this using the same 9-image dataset as in denoising. From [Figure 6](http://), we can see again that ***our method is capable of reliably detecting near-peak performance measured by either ES-PG or ES-SG, much better than without implementing any ES***.
+Now we turn to [SIREN](https://proceedings.neurips.cc//paper/2020/hash/53c04118df112c13a8c34b38343b9c10-Abstract.html), a recent functional SIDGP model that is designed to facilitate the learning of functions with significant high-frequency components. We consider a simple task from the original task, image regression, but add in some Gaussian noise. Mathematically, the y = x + ε, where ε∼N (0, 0.196). Clearly, when the MLP used in SIREN is sufficiently overparamterized, the noise will also be learned. We test our detection method on this using the same 9-image dataset as in denoising. From [Figure 6](http://), we can see again that ***our method is capable of reliably detecting near-peak performance measured by either ES-PG or ES-SG, much better than without implementing any ES***.
 
  <div align="center">
 <figure><img src="figures/siren_psnr_ssim-01_V2.png" width="800"></figure>
@@ -75,8 +75,11 @@ Now we turn to SIREN, a recent functional SIDGP model that is designed to facili
  <figcaption>Figure 6: Results for image regression.</figcaption>
 </div>
  <br>
-
+ 
 ## Citation/BibTex
+
+More technical details and experiemntal results can be found in our paper:
+
 Taihui Li, Zhong Zhuang, Hengyue Liang, Le Peng, Hengkang Wang, Ju Sun. Self-Validation: Early Stopping for Single-Instance Deep Generative Priors. 32nd British Machine Vision Conference 2021.
 
 ## Contact
