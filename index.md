@@ -31,6 +31,9 @@ In this paper, we propose the first principled method for early stopping when ap
 
 ## Image denoising
 
+The power of DIP and DD was initially only demonstrated on Gaussian denoising. Here, to make the evaluation more thorough, we also experiment with denoising impulse, shot, and speckle noise, on a [standard image denoising dataset](https://webpages.tuni.fi/foi/GCF-BM3D/index.html#ref_results) (9 images). For each of the 4 noise types, we test a low and a high noise level (details in the Appendix of our paper). To obtain the final degraded
+results, we run DIP for 150K iterations. The denoising results are measured in terms of the gap metrics that we define are summarized in [Figure 3](http://). 
+
 <div align="center">
 <figure><img src="figures/final_dip_denoising_comb-01.png" width="800"></figure>
  <br>
@@ -38,6 +41,9 @@ In this paper, we propose the first principled method for early stopping when ap
 </div>
  <br>
  
+ 
+We further confirm the merit of our method on a larger image dataset consisting of 100 randomly selected images from [ImageNet](https://image-net.org/), denoted as IN-100. We follow the same evaluation protocol as above, except that we only experiment a medium noise level and we do not estimate the means and standard deviations; the results are reported in [Figure 4](http://). It is easy to see that the ES-PGs are concentrated around 1 and the ES-GSs are concentrated around 0.1, consistent with our observation on the small-scale dataset above.
+
  <div align="center">
 <figure><img src="figures/online_scatter_final-01.png" width="800"></figure>
  <br>
