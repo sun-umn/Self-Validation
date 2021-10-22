@@ -12,7 +12,7 @@ Recent works have shown the surprising effectiveness of deep generative models i
 <div align="center">
 <figure><img src="figures/dip_dd_comb-01.png" width="800"></figure>
  <br>
- <figcaption>Figure 1: Illustration of the overfitting issue of DIP and DD on image denoising with Gaussian noise (noise level: σ = 0.18; pixel values normalized to [0, 1]). The reconstruction quality (as measured by both PSNR and SSIM) typically follows a skewed bell curve: before the peak only the clean image content is recovered, but after the peak noise starts to kick in. Note that DD is not free from overfitting when the network is increasingly over-parametrized (indicated by the number following “DD-” in the legend).</figcaption>
+ <figcaption>Figure 1: Illustration of the overfitting issue of DIP and DD on image denoising with Gaussian noise.</figcaption>
 </div>
 
 In this paper, we propose the first principled method for early stopping when applying SIDGPs to image reconstruction, taking advantage of the typical bell trend of the reconstruction quality. In particular, our method is based on collaborative training and ***self-validation***: the primal reconstruction process is monitored by a deep autoencoder, which is trained online with the historic reconstructed images and used to validate the reconstruction quality constantly. On several IR problems and different SIDGPs that we experiment with, our self-validation method is able to reliably detect near-peak performance levels and signal good stopping points.
