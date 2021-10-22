@@ -12,7 +12,7 @@ Recent works have shown the surprising effectiveness of deep generative models i
 <div align="center">
 <figure><img src="figures/dip_dd_comb-01.png" width="800"></figure>
  <br>
- <figcaption>Figure 1: Illustration of the overfitting issue of DIP and DD on image denoising with Gaussian noise.</figcaption>
+ <figcaption>Figure 1: Illustration of the overfitting issue of [Deep Image Prior (DIP)(https://openaccess.thecvf.com/content_cvpr_2018/html/Ulyanov_Deep_Image_Prior_CVPR_2018_paper.html) and [Deep Decoder (DD)](http://) on image denoising with Gaussian noise.</figcaption>
 </div>
  <br>
  
