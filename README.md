@@ -13,7 +13,8 @@ This is the official implementation of our paper *Self-Validation: Early Stoppin
 
 2. Switch to `Self-Validation` :
 
-   `cd XXX/Self-Validation`  (*Note*: `XXX` here indicates the upper directory of `Self-Validation`. For example, if you clone `Self-Validation` under `/home/Download`, then you should replace `XXX` with `/home/Download`.)
+   `cd XXX/Self-Validation`  
+   (*Note*: `XXX` here indicates the upper directory of `Self-Validation`. For example, if you clone `Self-Validation` under `/home/Download`, then you should replace `XXX` with `/home/Download`.)
 
 3. Deactivate conda base environment first you are in (otherwise, go to step 4 directly) (We use [Anaconda3](https://www.anaconda.com/products/individual-d)):
 
@@ -25,5 +26,5 @@ This is the official implementation of our paper *Self-Validation: Early Stoppin
    
 5.  Activate conda environment and you are now ready to explpre the codes/models!
     
-    `conda activate fair_gpu` (If you choose the GPU version in Step4)
+    `conda activate pytorch_py3.6`
     
