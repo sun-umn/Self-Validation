@@ -28,3 +28,7 @@ This is the official implementation of our paper *Self-Validation: Early Stoppin
     
     `conda activate pytorch_py3.6`
     
+## Explore the Codes/Models
+
+### Dataset
+We provide a ready-to-use dataset under the folder `/Dataset` where there are 4 types of noises we used in our paper.
