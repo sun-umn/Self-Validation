@@ -20,7 +20,7 @@ This is the official implementation of our paper *Self-Validation: Early Stoppin
 
    `conda deactivate`
 
-4. Create a new conda environment with the YML file we provided:
+4. Create a new conda environment with the YML file we provide:
 
     `conda env create -f environment.yml`
    
