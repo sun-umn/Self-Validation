@@ -33,4 +33,4 @@ This is the official implementation of our paper *Self-Validation: Early Stoppin
 ### Dataset
 We provide a ready-to-use dataset under the folder `/Dataset` where there are 4 types of noises we used in our paper.
 
-Alternatively, you can also create the dataset by yourself. The clean images can be downloaded via [link](https://webpages.tuni.fi/foi/GCF-BM3D/index.html#ref_results). After you have the clean images, you can follow the [ImageNet-C protocol](https://github.com/hendrycks/robustness) to create the corrupted images. For the parameters for each noise level, please check the Appendix of [our paper](http://).
+Alternatively, you can also create the dataset by yourself. The clean images can be downloaded [here](https://webpages.tuni.fi/foi/GCF-BM3D/index.html#ref_results). After you have the clean images, you can follow the [ImageNet-C protocol](https://github.com/hendrycks/robustness) (or write corruption functions by yourself) to create the corrupted images. For the parameters for each noise level, please check the Appendix of [our paper](http://).
