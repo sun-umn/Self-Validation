@@ -34,3 +34,22 @@ This is the official implementation of our paper *Self-Validation: Early Stoppin
 We provide a ready-to-use dataset under the folder `/Dataset` where there are 4 types of noises we used in our paper.
 
 Alternatively, you can also create the dataset by yourself. The clean images can be downloaded [here](https://webpages.tuni.fi/foi/GCF-BM3D/index.html#ref_results). After you have the clean images, you can follow the [ImageNet-C protocol](https://github.com/hendrycks/robustness) (or write corruption functions by yourself) to create the corrupted images. For the parameters for each noise level, please check the Appendix of [our paper](http://).
+
+### DIP+AE
+
+
+### DD+AE
+
+## Citation/BibTex
+
+More technical details and experiemntal results can be found in our paper:
+
+Taihui Li, Zhong Zhuang, Hengyue Liang, Le Peng, Hengkang Wang, Ju Sun. Self-Validation: Early Stopping for Single-Instance Deep Generative Priors. 32nd British Machine Vision Conference 2021.
+
+## Contact
+- Taihui Li, lixx5027@umn.edu, [https://taihui.github.io/](https://taihui.github.io/)
+- Zhong Zhuang, zhuan143@umn.edu, [https://scholar.google.com/citations?user=rGGxUQEAAAAJ](https://scholar.google.com/citations?user=rGGxUQEAAAAJ)
+- Hengyue Liang, liang656@umn.edu, [https://hengyuel.github.io/](https://hengyuel.github.io/)
+- Le Peng, peng0347@umn.edu, [https://sites.google.com/view/le-peng/](https://sites.google.com/view/le-peng/)
+- Hengkang Wang, wang9881@umn.edu, [https://www.linkedin.com/in/hengkang-henry-wang-a1b293104/](https://www.linkedin.com/in/hengkang-henry-wang-a1b293104/)
+- Ju Sun, jusun@umn.edu, [https://sunju.org/](https://sunju.org/)
