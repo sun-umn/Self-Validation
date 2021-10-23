@@ -37,6 +37,10 @@ Alternatively, you can also create the dataset by yourself. The clean images can
 
 ### DIP+AE
 
+`DIP+AE` uses [deep image prior (DIP)](https://ieeexplore.ieee.org/abstract/document/8579082) to reconstruct image while simultaneously we train a deep autoencoder to monitor the quality of the reconstructed images and signal early-stopping when DIP starts to recover noise. Inside it, we provide the complete code for image denoising on each noise type and each noise level where they share the same file structures and the merely difference is that each process different noises (or noise levels). Thus, we only use Gaussian noise level 2 (low noise level) as an example below.
+
+
+
 
 ### DD+AE
 
