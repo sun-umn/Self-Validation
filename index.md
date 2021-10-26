@@ -1,9 +1,3 @@
-<div align="center">
-<figure><img src="figures/earlystop-Framework_V3.png" width="800"></figure>
- <br>
-</div>
-
-
 
 ## Early stopping via self-validation
 
