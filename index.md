@@ -71,7 +71,7 @@ Now we turn to [SIREN](https://proceedings.neurips.cc//paper/2020/hash/53c04118d
  
 ## Citation/BibTex
 
-More technical details and experiemntal results can be found in our paper:
+More technical details and experimental results can be found in our paper:
 
 Taihui Li, Zhong Zhuang, Hengyue Liang, Le Peng, Hengkang Wang, Ju Sun. Self-Validation: Early Stopping for Single-Instance Deep Generative Priors. 32nd British Machine Vision Conference 2021.
 
