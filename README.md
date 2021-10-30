@@ -69,7 +69,7 @@ python Main_Start.py
 
 `DD+AE` uses [deep decoder (DD)](https://openreview.net/forum?id=rylV-2C9KQ) to reconstruct image while simultaneously we train a deep autoencoder to monitor the quality of the reconstructed images and signal early-stopping when DD starts to recover noise. Inside it, we provide the complete code for image denoising on each noise type and each noise level where they share the same file structures and the merely difference is that each process different noises (or noise levels).
 
-Since we follow the exact same protocol as that of "DIP+AE" to orgianize files and set up our code for "DD+AE", we therefore omit the detailed description in here. Please refer ["DIP+AE"](https://github.com/sun-umn/Self-Validation/blob/main/README.md#dipae) for the detailed description.
+Since we follow the exact same protocol as that of `DIP+AE` to orgianize files and set up our code for `DD+AE`, we therefore omit the detailed description in here. Please refer [`DIP+AE`](https://github.com/sun-umn/Self-Validation/blob/main/README.md#dipae) for the detailed description.
 
 ## Citation/BibTex
 
