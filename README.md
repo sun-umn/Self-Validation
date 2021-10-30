@@ -59,7 +59,7 @@ Alternatively, you can also create the dataset by yourself. The clean images can
 └── 
 ```
 
-We have provided the detailed inline comments in each Python file. You can modify any parameters you want to explore the models. Or, you can simply try our early-stopping method by running the command below:
+We have provided the detailed inline comments in each Python file. You can modify any parameters you want to explore the models. Or, you can try our early-stopping method by simply running the command below:
 
 ```
 python Main_Start.py
