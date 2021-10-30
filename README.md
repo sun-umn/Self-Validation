@@ -67,6 +67,15 @@ More technical details and experiemntal results can be found in our paper:
 
 Taihui Li, Zhong Zhuang, Hengyue Liang, Le Peng, Hengkang Wang, Ju Sun. Self-Validation: Early Stopping for Single-Instance Deep Generative Priors. 32nd British Machine Vision Conference 2021.
 
+```
+@article{li2021self,
+  title={Self-Validation: Early Stopping for Single-Instance Deep Generative Priors},
+  author={Li, Taihui and Zhuang, Zhong and Liang, Hengyue and Peng, Le and Wang, Hengkang and Sun, Ju},
+  journal={arXiv preprint arXiv:2110.12271},
+  year={2021}
+}
+```
+
 ## Contact
 - Taihui Li, lixx5027@umn.edu, [https://taihui.github.io/](https://taihui.github.io/)
 - Zhong Zhuang, zhuan143@umn.edu, [https://scholar.google.com/citations?user=rGGxUQEAAAAJ](https://scholar.google.com/citations?user=rGGxUQEAAAAJ)
