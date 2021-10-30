@@ -55,8 +55,8 @@ Alternatively, you can also create the dataset by yourself. The clean images can
 |   ├── Early_Stop.py                     /* Our early stopping function.
 |   ├── track_rank.py                     /* Check the rank of the latent code of our detection AE.
 |   ├── Smooth_Values.py                  /* To get a smooth curve of AE reconstruction error (we do not use it in our experiments).
-|   ├── psnr_ssim.py                      /* To get the PSNR and SSIM values.
-
+|   └── psnr_ssim.py                      /* To get the PSNR and SSIM values.    
+└── 
 ```
 
 We have provided the detailed inline comments in each Python file. To try our early-stopping method, one can simply run the command below:
