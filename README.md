@@ -2,7 +2,7 @@
 
 ## Self-Validation: Early Stopping for Single-Instance Deep Generative Priors
 
-This is the official implementation of our paper *Self-Validation: Early Stopping for Single-Instance Deep Generative Priors* which has been accepted by the [32nd British Machine Vision Conference 2021](http://www.bmvc2021.com/). You can find our paper via [this link](http://) and the project webpage via [this link](https://sun-umn.github.io/Self-Validation/).
+This is the official implementation of our paper *Self-Validation: Early Stopping for Single-Instance Deep Generative Priors* which has been accepted by the [32nd British Machine Vision Conference 2021](http://www.bmvc2021.com/). You can find our paper via [this link](https://arxiv.org/abs/2110.12271) and the project webpage via [this link](https://sun-umn.github.io/Self-Validation/).
 
 
 ## Set Up the Environment
@@ -31,9 +31,9 @@ This is the official implementation of our paper *Self-Validation: Early Stoppin
 ## Explore the Codes/Models
 
 ### Dataset
-We provide a ready-to-use dataset under the folder `/Dataset` where there are 4 types of noises we used in our paper.
+We provide a ready-to-use dataset under the folder `/Dataset` where there are 4 types of noises we used in our paper where "XXX_2" indicates "low noise level", "XXX_3" indicates "medium noise level", and "XXX_4" indicates "high noise level".
 
-Alternatively, you can also create the dataset by yourself. The clean images can be downloaded [here](https://webpages.tuni.fi/foi/GCF-BM3D/index.html#ref_results). After you have the clean images, you can follow the [ImageNet-C protocol](https://github.com/hendrycks/robustness) (or write corruption functions by yourself) to create the corrupted images. For the parameters for each noise level, please check the Appendix of [our paper](http://).
+Alternatively, you can also create the dataset by yourself. The clean images can be downloaded [here](https://webpages.tuni.fi/foi/GCF-BM3D/index.html#ref_results). After you have the clean images, you can follow the [ImageNet-C protocol](https://github.com/hendrycks/robustness) (or write corruption functions by yourself) to create the corrupted images. For the parameters for each noise level, please check the Appendix of [our paper](https://arxiv.org/abs/2110.12271).
 
 ### DIP+AE
 
@@ -46,24 +46,34 @@ Alternatively, you can also create the dataset by yourself. The clean images can
 |   ├── models                            /* The DIP models (adopted direclty from DIP).
 |   ├── utils                             /* The DIP functions/packages (adopted direclty from DIP).
 |   ├── Main_Start.py                     /* The start point of our method (everhtying starts from this python file).
-|   ├──                   /* 
-|   ├──                   /* 
-|   ├──                   /* 
-|   ├──                   /* 
-|   ├──                   /* 
-|   ├──                   /* 
-|   ├──                   /* 
-|   ├──                   /* 
-|   ├──                   /* 
-|   ├──                   /* 
+|   ├── train_denoising.py                /* Train DIP to do the denoising (it will also call our detection AE).
+|   ├── util.py                           /* The auxiliary functions for DIP (e.g., preparing the dataset).
+|   ├── AE_train.py                       /* The entry of our detection AE; it is called by "train_denoising.py".
+|   ├── AE_bp.py                          /* Train our detection AE.
+|   ├── AE_model.py                       /* Our detection AE model.
+|   ├── AE_util.py                        /* The auxiliary functions for detection AE (e.g., preparing the dataset).
+|   ├── Early_Stop.py                     /* Our early stopping function.
+|   ├── track_rank.py                     /* Check the rank of the latent code of our detection AE.
+|   ├── Smooth_Values.py                  /* To get a smooth curve of AE reconstruction error (we do not use it in our experiments).
+|   ├── psnr_ssim.py                      /* To get the PSNR and SSIM values.
 
+```
+
+We have provided the detailed inline comments in each Python file. To try our early-stopping method, one can simply run the command below:
+
+```
+python Main_Start.py
 ```
 
 ### DD+AE
 
+`DD+AE` uses [deep decoder (DD)](https://openreview.net/forum?id=rylV-2C9KQ) to reconstruct image while simultaneously we train a deep autoencoder to monitor the quality of the reconstructed images and signal early-stopping when DD starts to recover noise. Inside it, we provide the complete code for image denoising on each noise type and each noise level where they share the same file structures and the merely difference is that each process different noises (or noise levels).
+
+Since we follow the exact same protocol as that of ```DIP+AE``` to orgianize files and set up our code for ```DD+AE```, we therefore omit the detailed description in here. Please refer ```DIP+AE``` for the description.
+
 ## Citation/BibTex
 
-More technical details and experiemntal results can be found in our paper:
+More technical details and experimental results can be found in our paper:
 
 Taihui Li, Zhong Zhuang, Hengyue Liang, Le Peng, Hengkang Wang, Ju Sun. Self-Validation: Early Stopping for Single-Instance Deep Generative Priors. 32nd British Machine Vision Conference 2021.
 
