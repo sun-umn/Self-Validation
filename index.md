@@ -84,7 +84,7 @@ More technical details and experimental results can be found in our paper:
                Ju Sun},
   title     = {Self-Validation: Early Stopping for Single-Instance Deep Generative
                Priors},
-  booktitle = {32nd British Machine Vision Conference 2021, {BMVC} 2021, Online,
+  booktitle = {32nd British Machine Vision Conference 2021, BMVC 2021, Online,
                November 22-25, 2021},
   pages     = {108},
   publisher = {{BMVA} Press},
