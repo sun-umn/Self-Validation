@@ -87,7 +87,7 @@ More technical details and experimental results can be found in our paper:
   booktitle = {32nd British Machine Vision Conference 2021, BMVC 2021, Online,
                November 22-25, 2021},
   pages     = {108},
-  publisher = {{BMVA} Press},
+  publisher = {BMVA Press},
   year      = {2021},
   url       = {https://www.bmvc2021-virtualconference.com/assets/papers/1633.pdf},
   timestamp = {Wed, 22 Jun 2022 16:52:45 +0200},
