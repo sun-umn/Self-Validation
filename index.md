@@ -73,6 +73,7 @@ Now we turn to [SIREN](https://proceedings.neurips.cc//paper/2020/hash/53c04118d
 
 More technical details and experimental results can be found in our paper:
 
+
 ```
 @inproceedings{DBLP:conf/bmvc/LiZLPWS21,
   author    = {Taihui Li and
