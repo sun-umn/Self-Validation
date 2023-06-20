@@ -78,11 +78,45 @@ More technical details and experimental results can be found in our paper:
 Taihui Li, Zhong Zhuang, Hengyue Liang, Le Peng, Hengkang Wang, Ju Sun. Self-Validation: Early Stopping for Single-Instance Deep Generative Priors. 32nd British Machine Vision Conference 2021.
 
 ```
-@article{li2021self,
-  title={Self-Validation: Early Stopping for Single-Instance Deep Generative Priors},
-  author={Li, Taihui and Zhuang, Zhong and Liang, Hengyue and Peng, Le and Wang, Hengkang and Sun, Ju},
-  journal={arXiv preprint arXiv:2110.12271},
-  year={2021}
+@inproceedings{DBLP:conf/bmvc/LiZLPWS21,
+  author       = {Taihui Li and
+                  Zhong Zhuang and
+                  Hengyue Liang and
+                  Le Peng and
+                  Hengkang Wang and
+                  Ju Sun},
+  title        = {Self-Validation: Early Stopping for Single-Instance Deep Generative
+                  Priors},
+  booktitle    = {32nd British Machine Vision Conference 2021, {BMVC} 2021, Online,
+                  November 22-25, 2021},
+  pages        = {108},
+  publisher    = {{BMVA} Press},
+  year         = {2021},
+  url          = {https://www.bmvc2021-virtualconference.com/assets/papers/1633.pdf},
+  timestamp    = {Wed, 22 Jun 2022 16:52:45 +0200},
+  biburl       = {https://dblp.org/rec/conf/bmvc/LiZLPWS21.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+```
+
+```
+@article{DBLP:journals/corr/abs-2112-06074,
+  author       = {Hengkang Wang and
+                  Taihui Li and
+                  Zhong Zhuang and
+                  Tiancong Chen and
+                  Hengyue Liang and
+                  Ju Sun},
+  title        = {Early Stopping for Deep Image Prior},
+  journal      = {CoRR},
+  volume       = {abs/2112.06074},
+  year         = {2021},
+  url          = {https://arxiv.org/abs/2112.06074},
+  eprinttype    = {arXiv},
+  eprint       = {2112.06074},
+  timestamp    = {Mon, 03 Jan 2022 15:45:35 +0100},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-2112-06074.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
 }
 ```
 
